@@ -1,0 +1,155 @@
+.helpBody{
+    width:100%;
+    height: 100vh;
+}
+body {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222, 213, 213);
+
+  }
+  
+  header {
+    background-color: #82A3AC;
+    color: #1f1f1f;
+    padding: 100px 40px 50px 40px;
+    text-align: center;
+    background-image: url("IMAGES/clouds.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    
+  }
+  header p{
+    color: #1f1f1f;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  
+  
+  footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .list-num{
+    list-style-type: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .list-num-item{
+    display: flex;
+    align-items:start;
+    justify-content: left;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+    border-bottom-color:black ;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 30px;
+    row-gap: 50px;
+  }
+  
+  .card {
+    width: 90%;
+    height: 30vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.2);
+   
+  }
+  .card-item{
+    padding-right: 6px;
+    width: 90%;
+  }
+  .list-group{
+    width:80%;
+  }
+  .card-body{
+    width:100%;
+    padding-top: 0%;
+  }
+  .card-img-top{
+    width:25%;
+  }
+  .card-title{
+    color: rgb(208, 116, 116);
+    font-size: 22px;
+  }
+  .card-text{
+    color: rgb(34, 34, 34);
+    font-size: 11px;
+  }
+  .list-group-item{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    color: #1f1f1f;
+    font-size: 12px;
+    margin-bottom: 8px;
+    height: 25px;
+  }
+  .list-group-item a{
+    text-decoration: none;
+    color: #1f1f1f;
+  }
+  .list-group-item a:hover{
+    text-decoration: underline;
+  }
+  .quote-container {
+     /* Adjust margin for spacing */
+    max-width: 100%; /* Set maximum width */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3vh; /* Adjust padding for spacing */
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(50, 63, 75);
+    text-align: center;
+    margin-bottom: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .content{
+    padding: 0%;
+  }
+  .quote {
+    display: none;
+    font-size: 2vw; /* Responsive font size */
+    margin: 2vh 0; /* Adjust margin for spacing */
+    animation: fadeInOut 5s ease-in-out infinite;
+    color: rgb(228, 226, 226);
+    
+  }
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+  @media screen and (max-width: 768px) {
+    .quote-container {
+      padding: 5vw; /* Adjust padding for smaller screens */
+    }
+    .quote {
+      font-size: 6vw; /* Adjust font size for smaller screens */
+      margin: 4vw 0; /* Adjust margin for smaller screens */
+    }
+    header{
+      height: 80vh;
+    }
+  }
