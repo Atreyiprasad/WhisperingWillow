@@ -1,0 +1,161 @@
+body{
+    width:100%;
+    height: 100vh;
+  
+
+        background-image: url("IMAGES/polka.jpg");
+        background-size: cover ;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      
+}
+.below{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+}
+.date-container {
+    text-align: right;
+    width:20%;
+    height:12vh;
+    padding-top: 3px;
+    position: absolute;
+    right: 15px;
+    z-index:2;
+
+}
+#date{
+    font-family: "Rowdies", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px; 
+}
+#current-date{
+    font-family: "Rowdies", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size:15px;
+}
+
+
+.test{
+    border: 2px solid #0e0d0d;
+    padding: 7px;
+    text-align: center;
+    width:1210px;
+    height:60px;
+    top:130px;
+    position:relative;
+    background-color: #f0a9dc;
+}
+#test{
+    font-size:20px;
+}
+.parent-container{
+    width:100%;
+    margin-bottom: 30px;
+}
+.form-check{
+    width:10%;
+}
+.checkbox-container {
+    width: 90%;
+    position: relative;
+    z-index: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.form-check-inline {
+    margin: 5px;  /* Adjust as needed */
+}
+
+textarea.form-control {
+    height: 200px; /* Set the desired height */
+    resize: vertical; /* Allow vertical resizing */
+}
+.below-containers{
+    height: 80vh;
+}
+
+.card-text textarea{
+    width:100%;
+    height: 90%;
+}
+
+.card {
+    z-index:1;
+    border: 2px solid;
+    width: 100%;
+    height: 90%;
+
+}
+.card-body{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 60%;
+}
+.card-text{
+    width:100%;
+    height: 100%;
+    font-size: 13px;
+    color: black;
+}
+.container{
+    width: 100%;
+    margin-top: 90px;
+}
+.card-title{
+    font-size: 20px;
+    color: black;
+}
+.row{
+    height: 95%;
+    width: 100%;
+}
+.col{
+    height: 95%;
+    padding: 0;
+   
+   
+}
+.have{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0%;
+    margin-right: 9%;
+
+}
+.together{
+    display: flex;
+    flex-direction: row;
+   justify-content: left;
+   align-items: center;
+   width: 100%;
+   padding-left: 10%;
+}
+.form-check1{
+    text-align: left;
+    width: 30px;
+    margin-right: 18px;
+   
+}
+.form-check{
+    margin-right: 20px;
+}
+.form-check label i{
+    font-size: 30px;
+    
+}
+textarea{
+    font-size: 10px;
+    font-weight: 100;
+}
+
+
+
+  
+  
