@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Whispering Willow</title>
+  </head>
+  <style>
+    body{
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
+}
+.outer-box{
+    margin-top: 90px;
+    width:280px;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.aivai{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    margin-bottom: 18px;
+    width:100%;
+    height: 70%;
+    
+}
+.pic{
+    width:80px;
+    height: 83px;
+    border-radius: 88px;
+    
+}
+.img-bg{
+    display: flex;
+    justify-content: center;
+    background-color: #565252;
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top:0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+}
+.desc-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(61, 61, 61);
+    margin-top: 20px;
+    
+}
+.media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.link{
+    text-decoration: none;
+    margin: 3px;
+    border-radius: 50px;
+    color:#fff;
+    height: 25px;
+    width:25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+   
+
+}
+.buttons{
+    display:flex;
+    align-items: center;
+    font-size: 10px;
+    padding: 3px;
+    margin-top:15px ;
+
+    border-top: 1px solid;
+   
+}
+
+.symbols{
+    display: flex;
+    flex-direction: row;
+    column-gap: 7px;
+  
+}
+.bleh{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(61, 61, 61); 
+    font-size: 11px;
+    border-right: 1.5px solid #a3a0a0;
+    border-radius: 1px;
+    padding-right: 9px;
+    padding-left: 0px;
+    margin-left: 0px;
+   
+}
+.icons{
+    margin-right: 2px;
+}
+
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg  navi " style="color: #000000;box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);position: fixed;top:0;" >
+      <a class="navbar-brand" href="#" style="font-size: 18px;"><img src="IMAGES/logoC.jpg" style="width: 10%;height: 100%;position: absolute;top: 0;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fffdfd;"  >
+        <i class='bx bx-menu' style="color: black;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="color: #000000;" >
+        <ul class="navbar-nav" style="position: absolute;right: 0;margin-right: 8px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="./project.html" >Dashboard<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./selfcare.html">Self Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mood.html" >Mood Tracker</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./progress.html">Progress Tracker</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./helpline.html" >Helpline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./profile.html" ><i class='bx bx-user-circle' style="font-size: 20px;" style="text-decoration: underline;text-decoration-color: rgb(208, 116, 116);"></i></a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="outer-box">
+      <div class="img-bg">
+          <img src="IMAGES/profile.png" class="pic">
+      </div>
+      <div class="aivai">
+          <div class="desc-text">
+             
+              <span class="job" id="usernameDisplay">Username: User123</span>
+          </div>
+          <div class="info" style="font-size: 10px;text-align: center;margin-top: 7px;"><span id="ageDisplay">Age: 27</span><br><span id="genderDisplay">Gender: Female</span></div>
+          <div class="media-buttons">
+              <div class="email" style="font-size: 10px;" id="emailDisplay">Email: user123@gmail.com</div>
+          </div>
+  
+          <div class="buttons">
+              <div class="history" style="padding: 8px 25px ;text-align: center;"><span style="font-size: 12px;">Coping strategies</span><br><span id="copingStrategiesDisplay">Engaging in regular exercise or physical activities such as walking, 
+                jogging, or yoga to release tension and improve mood.</span></div>
+          </div>
+  
+          
+      </div>
+      
+  </div>
+  
+  </body>
+</html>
