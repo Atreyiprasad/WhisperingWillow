@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Whispering Willow</title>
+  </head>
+  <style>
+    .external{
+        margin-top: 75px;
+    }
+    .col{
+        height: 50%;
+    }
+    .card{
+        border:none;
+    }
+    h5{
+        font-size: 25px;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .card-body p{
+        color: #2d2d2d;
+    }
+    body{
+        width:100%;
+        height: 100vh;
+        background-image: url("IMAGES/mini.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    #mood-meter {
+      text-align: center;
+      padding: 20px;
+      font-family: "Rowdies", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px; 
+    }
+
+    #chart-container {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    canvas {
+      border: 1px solid #ccc;
+      
+    }
+
+    form {
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+      width: 40px;
+      margin: 10px;
+    }
+
+    input[type="submit"] {
+        margin-top: 20px;
+        border:none;
+        outline: none;
+        width:180px;
+        height: 40px;
+        background-color: black;
+        color:white;
+        font-size:13px ;
+        font-family: "Rowdies", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px rgba(244, 244, 244, 0.2);
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg  navi " style="color: #000000;box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);position: fixed;top:0;" >
+      <a class="navbar-brand" href="#" style="font-size: 18px;"><img src="IMAGES/logoC.jpg" style="width: 10%;height: 100%;position: absolute;top: 0;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fffdfd;"  >
+        <i class='bx bx-menu' style="color: black;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="color: #000000;" >
+        <ul class="navbar-nav" style="position: absolute;right: 0;margin-right: 8px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="./project.html" >Dashboard<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./selfcare.html">Self Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mood.html" >Mood Tracker</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./progress.html" style="text-decoration: underline;text-decoration-color: rgb(208, 116, 116);">Progress Tracker</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./helpline.html" >Helpline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./profile.html" ><i class='bx bx-user-circle' style="font-size: 20px;" ></i></a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+<div class="external">
+    <div class="row">
+        <div class="col">
+            <div class="card h-100">
+                <img src="IMAGES/tick.gif" class="card-img-top" alt="..." height="200px" weight="200px">
+                <div class="card-body">
+                    <h5 class="card-title">Did you log your mood today?</h5>
+                    <p class="card-text">
+                        <b>Nice Work!</b><br />Including today, you have logged your mood for 2 consecutive day.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="padding-bottom: 10px;">
+                <img src="IMAGES/high-five.gif" class="card-img-top" alt="..." height="200px" weight="200px">
+                <div class="card-body">
+                    <h5 class="card-title">Accomplishments</h5>
+                    <p class="card-text">
+                        <b>Hurray!</b><br />Take a moment to appreciate your commitment to meditation over the past week!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col" >
+            <div class="card h-100" style="padding-bottom: 30px;">
+                <img src="IMAGES/sleep.gif" class="card-img-top" alt="..." height="200px" weight="200px">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects#:~:text=Studies%20also%20show%20that%20sleep,%2C%20and%20risk%2Dtaking%20behavior." target="_blank">World Sleep Day</a></h5>
+                    <p class="card-text">This World's Sleep Day check how sleep effects your mental well-being. Make sure to track your sleep schedule!</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mood-meter">
+    <h1>Sleep Radar of the Week</h1><br>
+    <div id="chart-container">
+      <canvas id="mood-chart"></canvas>
+    </div>
+    <form id="mood-form">
+      <label for="monday">Monday:</label>
+      <input type="number" id="monday" min="1" max="10" required>
+      <label for="tuesday">Tuesday:</label>
+      <input type="number" id="tuesday" min="1" max="10" required>
+      <label for="wednesday">Wednesday:</label>
+      <input type="number" id="wednesday" min="1" max="10" required>
+      <label for="thursday">Thursday:</label>
+      <input type="number" id="thursday" min="1" max="10" required>
+      <label for="friday">Friday:</label>
+      <input type="number" id="friday" min="1" max="10" required>
+      <label for="saturday">Saturday:</label>
+      <input type="number" id="saturday" min="1" max="10" required>
+      <label for="sunday">Sunday:</label>
+      <input type="number" id="sunday" min="1" max="10" required>
+      <input type="submit" value="Update Chart">
+    </form>
+  </div>
+  <p style="color: black;padding-bottom: 20px;font-size: 20px;text-align: center;">Your commitment to self-care and self-improvement is paying off. Keep up the great work!</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+      const moodChartCanvas = document.getElementById('mood-chart');
+      const ctx = moodChartCanvas.getContext('2d');
+      let moodChart;
+
+      // Initial data
+      const initialMoodData = {
+        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        datasets: [{
+          label: 'Sleep',
+          data: [5, 6, 7, 6, 8, 7, 6],
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
+        }]
+      };
+
+      // Function to update chart data
+      function updateChart(data) {
+        if (moodChart) {
+          moodChart.destroy(); // Destroy previous chart instance
+        }
+
+        moodChart = new Chart(ctx, {
+          type: 'line',
+          data: data,
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'Number of hours slept'
+                }
+              },
+              x: {
+                title: {
+                  display: true,
+                  text: 'Days of the Week'
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // Initial chart setup
+      updateChart(initialMoodData);
+
+      // Form submission event listener
+      document.getElementById('mood-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get mood ratings from form inputs
+        const moodRatings = {
+          Monday: parseInt(document.getElementById('monday').value),
+          Tuesday: parseInt(document.getElementById('tuesday').value),
+          Wednesday: parseInt(document.getElementById('wednesday').value),
+          Thursday: parseInt(document.getElementById('thursday').value),
+          Friday: parseInt(document.getElementById('friday').value),
+          Saturday: parseInt(document.getElementById('saturday').value),
+          Sunday: parseInt(document.getElementById('sunday').value)
+        };
+
+        // Update chart data with new mood ratings
+        const updatedMoodData = {
+          labels: Object.keys(moodRatings),
+          datasets: [{
+            label: 'Sleep',
+            data: Object.values(moodRatings),
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          }]
+        };
+
+        updateChart(updatedMoodData);
+      });
+    });
+    </script>
+</body>
+
+</html>
