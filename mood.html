@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="mood.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Whispering Willow</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg  navi " style="color: #000000;box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);position: fixed;top:0;" >
+      <a class="navbar-brand" href="#" style="font-size: 18px;"><img src="IMAGES/logoC.jpg" style="width: 10%;height: 100%;position: absolute;top: 0;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fffdfd;"  >
+        <i class='bx bx-menu' style="color: black;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="color: #000000;" >
+        <ul class="navbar-nav" style="position: absolute;right: 0;margin-right: 8px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="./project.html" >Dashboard<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./selfcare.html">Self Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./mood.html" style="text-decoration: underline;text-decoration-color: rgb(208, 116, 116);">Mood Tracker</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./progress.html">Progress Tracker</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./helpline.html" >Helpline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./profile.html" ><i class='bx bx-user-circle' style="font-size: 20px;"></i></a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col" style="text-align: left;display: flex;align-items: center;border: none;background:none;">
+                <h1>Mood Tracker</h1>
+                <div class="date-container">
+                    <h2 id="date">Date</h2>
+                    <p id="current-date" style="color: black;"></p>
+                </div>
+              </div>
+        </div>
+        <div class="row" style="height: 30vh;">
+        <div class="col" style="border: 3px solid;">
+            <div class="card" style="border: none;margin: 1px 2px;width: 98%;">
+                
+                <div class="card-body" style="position: absolute;top:3px;">
+                    <p class="card-title"><b>Today i am grateful for</b></p>
+                    <p class="card-text"><textarea name="feelings" ></textarea></p>
+                </div>
+            </div>
+          </div>
+          <div class="col" style="border: 3px solid;">
+            <div class="card" style="border-radius: 12px;border: none;">
+
+                <div class="card-body" style="position: absolute;top:0px">
+                    <h5 class="card-title"><b>Weather</b></h5>
+                    <p class="card-text">Temperature:31C<br />Sunny<br />Humidity:51%</p>
+
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="parent-container">
+                <h6 style="margin: 0%;background-color: rgb(208, 116, 116);color:white;padding-bottom: 10px;padding-top:10px ;margin-bottom: 10px;border-top-left-radius: 9px;border-top-right-radius: 9px;">Today I felt</h6>
+                <div class="checkbox-container">
+                    <div class="form-check form-check-inline" id="test1">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Happy</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Joyful</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Productive</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Unhappy</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Annoyed</label>
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <div class="form-check form-check-inline" id="test1">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Grateful</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Content</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Motivated</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Sick</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Anxious</label>
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <div class="form-check form-check-inline" id="test1">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Proud</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Valued</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">OK</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Lonely</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Depressed</label>
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <div class="form-check form-check-inline" id="test1">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Excited</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Loved</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Tired</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Unmotivated</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Frustrated</label>
+                    </div>
+                </div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 style="margin: 0%;background-color: rgb(208, 116, 116);color:white;padding-bottom: 10px;padding-top:10px ;margin-bottom: 10px;border-top-left-radius: 9px;border-top-right-radius: 9px;">Did I have Enough</h3>
+                    <div class="together">
+                    <label for="#water">Water</label>
+                    <div class="have">
+                    <div class="form-check1 form-check-inline" id="#water">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check1 form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+            </div>
+                    <br />
+                    <div class="together">
+                    <label for="#exercise">Exercise</label>
+                    <div class="have">
+                    <div class="form-check1 form-check-inline" id="#exercise">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check1 form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+            </div>
+                    <br />
+                    <div class="together">
+                    <label for="#Sleep">Sleep</label>
+                    <div class="have">
+                    <div class="form-check1 form-check-inline" id="#Sleep">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check1 form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+            </div>
+                    <br />
+                    <div class="together">
+                    <label for="#Rest">Rest</label>
+                    <div class="have">
+                    <div class="form-check1 form-check-inline" id="#Rest">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                    </div>
+                    <div class="form-check1 form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">No</label>
+                    </div>
+                </div>
+            </div>
+                </div>
+           
+            <div class="col">
+                <div>
+                <h4 style="margin: 0%;background-color: rgb(208, 116, 116);color:white;padding-bottom: 10px;padding-top:10px ;margin-bottom: 10px;border-top-left-radius: 9px;border-top-right-radius: 9px;">Energy Level</h4>
+                <img src="bat.jpg" alt="" width="220px">
+                <br />
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1"><i class='bx bx-dizzy'></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><i class='bx bx-tired'></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <label class="form-check-label" for="inlineRadio3"><i class='bx bx-confused'></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><i class='bx bx-happy-alt' ></i></label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><i class='bx bx-cool' ></i></label>
+                </div>
+               
+        </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="padding-bottom:20px ;">
+                
+                    <h4 style="margin: 0%;background-color: rgb(208, 116, 116);color:white;padding-bottom: 10px;padding-top:10px ;margin-bottom: 10px;border-top-left-radius: 9px;border-top-right-radius: 9px;">What went well</h4>
+                    <textarea name="comments1" row="20" class="form-control"></textarea>
+                
+            </div>
+            <div class="col" style="padding-bottom:20px ;">
+           
+                    <h4 style="margin: 0%;background-color: rgb(208, 116, 116);color:white;padding-bottom: 10px;padding-top:10px ;margin-bottom: 10px;border-top-left-radius: 9px;border-top-right-radius: 9px;">What didn't go well</h4>
+                    <textarea name="comments2" row="20" class="form-control"></textarea>
+                
+            </div>
+          </div>
+          <div style="display: flex; align-items: center;justify-content: center;margin-bottom: 20px;"><button class="start" type="submit"><a href="./mood.html" style="text-decoration: none;color: #fffdfd;">Submit for Analysis</a></button></div>
+      </div>
+      
+      <script src="mood.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
