@@ -1,0 +1,143 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-lg  navi " style="color: #ffffff;box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);position: fixed;top:0;" >
+      <a class="navbar-brand" href="#" style="font-size: 18px;"><img src="IMAGES/logoC.jpg" style="width: 10%;height: 100%;position: absolute;top: 0;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fffdfd;"  >
+        <i class='bx bx-menu' style="color: rgb(255, 255, 255);"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="color: #ffffff;" >
+        <ul class="navbar-nav" style="position: absolute;right: 0;margin-right: 8px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="./about.html" >About Us<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./genInfo.html">General Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html" style="text-decoration: underline;text-decoration-color: rgb(208, 116, 116);">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./signUp.html">Sign In</a>
+              </li>
+            
+        </ul>
+      </div>
+    </nav>
+      <!--carosel for news -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="IMAGES/pink.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: black;">Donation for mental health support</h5>
+              <p><a href="https://www.soompi.com/article/1651916wpp/txts-beomgyu-makes-generous-donation-for-childrens-mental-health-support" target="_blank">Check out the article!</a></p>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="IMAGES/pink.jpg" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: black;">Siddarth Malhotra On Dealing with mental health</h5>
+
+              <p><a href="https://www.ndtv.com/video/entertainment/news/sidharth-malhotra-on-dealing-with-mental-health-you-have-to-be-in-your-lane-772136" target="_blank">Check out the news!</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="IMAGES/pink.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="color: black;">Sitar concert for mental health</h5>
+              <p><a href="https://www.deccanherald.com/india/karnataka/bengaluru/sitar-concert-for-mental-health-awareness-2957053" target="_blank">Concert can calm your mind</a></p>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--card for people-->
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+           
+            <div class="card-body">
+              <p class="card-title">Sarah Jones (College Student)</p>
+              <p class="card-text">This website was such a great resource! The blog post on managing exam stress really helped me stay calm during finals week. I also took the self-assessment and found the personalized recommendations super helpful</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            
+            <div class="card-body">
+              <p class="card-title">David Lee (Working Professional)</p>
+              <p class="card-text">"I've been struggling with feeling burnt out at work lately. This website helped me understand the signs and gave me practical tips on setting boundaries and prioritizing self-care. I feel much more equipped to manage my mental health now.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+           
+            <div class="card-body">
+              <p class="card-title">Michael Chen (Senior Citizen)</p>
+              <p class="card-text">I never really talked about mental health in my generation. This website is a breath of fresh air! It's never too late to learn about mental well-being. I enjoyed reading the blog post on mindfulness exercises and found them very calming.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+        
+            <div class="card-body">
+              <p class="card-title">Aisha Khan (Entrepreneur)</p>
+              <p class="card-text">Building my own business has been a rollercoaster ride. This website helped me recognize the signs of anxiety and provided practical tools for managing it. I especially appreciate the section on mindfulness for work-life balance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        
+        
+      </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
