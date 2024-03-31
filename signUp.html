@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content ="width=device-width,initial-scale=1.0 "/>
+        <title>signup</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+        & body{
+            width: 100%;
+            height:100vh;
+            background-image:url("titsay 𓆏 on X.jpeg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        header{
+            width:100%;
+            height: 15vh;
+            position:absolute;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            top: 0;
+     
+        }
+        .below{
+            width:70vw;
+            height: 90%
+           
+        }
+        & .box{
+            width:80%;
+            height:100%;
+            background-color: rgba(225, 218, 218, 0.766);
+            border-radius: 20px 20px 20px 20px;
+            padding:20px 0px;
+            font-size: 40px;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding:10px ;
+        }
+        & .head{
+            margin-top: 2%;
+            margin-bottom:21px;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 30px !important;
+            width: 100%;
+        }
+        button{
+            width:80px;
+            height: 30px;            
+            font-size: 20px;
+            border-radius: 15px 15px 15px 15px;
+            font-size: 10px;
+        }
+        button:hover{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            
+        }
+        & .input {
+            margin-bottom:17px;
+            font-size: 13px !important;
+            width:100%;
+            display: flex;
+            flex-direction: row;
+        }
+        & .sign{
+            padding:6px;
+            font-size: 15px !important;
+            
+        }
+        & .inputbox{
+            width:90%;
+            height:28px;
+            border-radius:15px 15px 15px 15px ;
+            font-size: 80%;
+            padding: 3px;
+            padding-left: 9px;
+            font-family: "Rowdies", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            border: none;
+        }
+        & .terms{
+            font-size: 14.6px !important;
+            
+        }
+        & .goback{
+           
+           position: absolute;
+           top:0;
+           margin-top: 3%;
+           margin-left: 10%;
+           font-size: 27px;
+           color: black;
+           font-weight: 600;
+           font-family: Roboto Slab;
+           
+
+           
+       }
+       .goback a{
+       text-decoration: none;
+       color: black;
+       border: 2px solid #000000;
+       padding:1px 2px;
+       padding-right: 4px;
+       }
+       .goback a:hover{
+            background-color: #00000057;
+        }
+       .input-box{
+            height: 50%;
+       }
+       .below{
+        width:100%;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       }
+       .sub{
+
+        width:100%;
+        margin-top: 10px;
+       }
+       .start{
+        margin-top:10px;
+        border:none;
+        outline: none;
+        width:180px;
+        height: 40px;
+        background-color: black;
+        
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px rgba(244, 244, 244, 0.2);
+        margin-bottom: 5px;
+}
+        .start:hover{
+            background-color: rgb(55, 55, 55);
+        }
+        .start a{
+            color:white;
+        font-size:13px ;
+        font-family: "Rowdies", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        text-decoration: none;
+        width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            .box {
+                width: 90%;
+            }
+            .input-box1,
+            .input-box2 {
+                width: 100%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <!--<header>
+            <div class="goback"> <a href="homepage.html"> <GO BACK </a></div>
+         </header>-->
+         <div class="below">
+        <div class="box">
+             <div class="head">Signup<br/></div>
+                <div class="input">
+                    <div class="input-box1" style="width: 50%;">
+                        <div class="sub"><label for="name" >First name</label><br/>
+                            <input type="text" class="inputbox" placeholder="Enter your first name" required id="firstNameInput"><br/></div>
+                        
+                        <div class="sub"><label for="age">Age</label><br/>
+                            <input type="text" class="inputbox" placeholder="Enter your age" required  id="ageInput"><br/></div>
+                        <div class="sub"><label for="gender">Gender</label><br/>
+                            <input type="text" class="inputbox" placeholder="Male/Female/Other" required  id="genderInput"><br/></div>
+                        <div class="sub"><label for="cs" >Coping Strategies</label><br/>
+                            <input type="text" class="inputbox" placeholder="It can be anything like meditation, sports etc." id="copingStrategiesInput"><br/></div>
+                    </div>
+                    <div class="input-box2" style="width: 50%;">
+                       <div class="sub"><label for="email">E-mail</label><br/>
+                        <input type="email" class="inputbox" placeholder="Enter your e-mail" required  id="emailInput"><br/></div> 
+                        <div class="sub"><label for="username" >Username</label><br/>
+                            <input type="text" class="inputbox" placeholder="Enter username" required id="usernameInput"><br/></div>
+                        <div class="sub"><label for="password" >Password <BR/></label>
+                            <input type="password" class="inputbox" placeholder="Enter your password" required><br/></div>
+                        <div class="sub"><label for="password" >Confirm password <BR/></label>
+                            <input type="password" class="inputbox" placeholder="Confirm password" required><br/></div>
+                        </div>
+               
+                        
+                </div>        
+                <div class="terms">
+                    <input type="checkbox" required>
+                    <label for="checkbox" >Accept terms and conditions</label>  
+                </div>
+                <div >
+                    <button class="start">
+                        <a href="./project.html"  onclick="saveProfile()">Submit</a>
+                        
+                    </button>
+                </div>
+                <div class="sign">
+                    Already have an account? <a href="loginn.html">Log In</a></div>
+                </div>
+                        
+                    </div>
+           
+    </div>
+    
+        </body>
+        </html>
