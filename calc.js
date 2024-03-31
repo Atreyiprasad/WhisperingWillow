@@ -287,10 +287,7 @@ let indexMax;
 function typeOf(){
   var max= Math.max(...typeArray);
   indexMax=typeArray.indexOf(max);
-    if(typeArray[0]===0){
-        document.getElementById("type").innerHTML = ("Invalid");
-        return;
-    }
+   
   if(indexMax==0){
     document.getElementById("type").innerHTML = ("Anxiety");
     
